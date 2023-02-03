@@ -6,6 +6,11 @@ main{
     display: block;
 }
 
+.wrapper{
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
 /* キービジュアル */
 
 .kv {
@@ -65,7 +70,7 @@ nav {
     opacity: 0;
 }
 
-.open nav {
+nav .open {
     right: 0;
     opacity: 1;
 }
