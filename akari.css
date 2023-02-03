@@ -6,6 +6,8 @@ main{
     display: block;
 }
 
+/* キービジュアル */
+
 .kv {
     height: 100vh;
     background-image: url(./kv.png);
@@ -14,6 +16,8 @@ main{
     background-size: cover;
     background-position: center top;
 }
+
+/* シーサーのロゴつけてみた */
 
 .top img {
     top: 5px;
@@ -33,7 +37,7 @@ main{
 }
 
 
-.kv li {
+/* .kv li {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -45,7 +49,7 @@ main{
     opacity: 0;
     -webkit-animation: anime 12s linear 5s infinite;
     animation: anime 20s linear infinite;
-}
+} */
 
 
 nav {
@@ -156,6 +160,10 @@ dl{
 }
 
 dt{
-    padding-right: 30px;
+    padding-right: 20px;
+}
+
+dd{
+    margin-left: 0;
 }
 
