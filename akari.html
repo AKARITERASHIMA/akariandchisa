@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./akari.css">
 </head>
+
 <body>
     <!-- kv -->
     <div class="kv">
 
         <div class="top">
             <img src="./illust302 (1).png" alt="ロゴ">
-            <h1>love okinawa (仮）</h1>
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <ul>
+                        <li><a href="#">TOP</a></li>
+                        <li><a href="#">ABOUT US</a></li>
+                        <li><a href="#">RECOMMEND</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
         </div>
+        <h1>love okinawa (仮）</h1>
     </div>
 
-
-    <!-- ナビゲーション -->
-    <div id="navArea">
-        
-        <nav>
-            <div class="inner">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">RECOMMEND</a></li>
-                </ul>
-            </div>
-        </nav>
-
-
-    <!-- togglebtn -->
-        <div class="toggle-btn">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div id="mask"></div>
+    <div class="openbtn">
+        <span></span>
+        <span></span>
+        <span></span>
     </div>
+
+   
+
+
+
 
     <main>
 
@@ -74,7 +74,7 @@
                     </dl>
                 </div>
                 <div class="aboutimg">
-                    <img src="./fv_sisa.jpg" alt="" >
+                    <img src="./fv_sisa.jpg" alt="">
                 </div>
 
             </div>
@@ -102,7 +102,7 @@
                 </div>
 
                 <div class="aboutimg">
-                    <img src="./fv_sisa.jpg" alt="" >
+                    <img src="./fv_sisa.jpg" alt="">
                 </div>
             </div>
         </section>
@@ -112,10 +112,13 @@
 
 
 
-        
+
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script src="./akari.js"></script>
 
-    
+
 </body>
+
 </html>

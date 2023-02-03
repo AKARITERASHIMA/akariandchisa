@@ -24,12 +24,27 @@ main{
 
 /* シーサーのロゴつけてみた */
 
+/* ナビゲーション */
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#g-nav-list ul li{
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+}
+
+
+
 .top img {
     top: 5px;
     left: 5px;
     padding-left: 30px;
     width: 150px;
-    position: absolute;
 }
 
 .top h1 {
@@ -41,128 +56,111 @@ main{
     letter-spacing: 1rem;
 }
 
-
-/* .kv li {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: none;
-    opacity: 0;
-    -webkit-animation: anime 12s linear 5s infinite;
-    animation: anime 20s linear infinite;
-} */
-
-
-nav {
-    display: block;
-    width: 220px;
-    position: fixed;
-    background-color: #FFFFFF;
-    top: 0;
-    right: -300px;
-    bottom: 0;
-    transition: all 0.5s;
-    z-index: 3;
-    opacity: 0;
+#g-nav{
+    position:fixed;
+    z-index: 999;
+	top:0;
+    right: -120%;
+	width:30%;
+    height: 100vh;
+	background:#2187b687;
+	transition: all 0.6s;
 }
 
-nav .open {
+/* 位置を０に */
+
+#g-nav.open{
     right: 0;
-    opacity: 1;
 }
 
-nav .inner {
-    padding: 25px;
-}
-
-nav .inner ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav .inner ul li {
-    margin: 0;
-    border-bottom: 1px solid#333;
-    padding: 20px 0px;
-}
-
-nav.inner ul li a {
-    display: block;
-    text-decoration: none;
-    color: #333;
-    font-size: 14px;
-    padding: 1rem;
-    transition-duration: 0.2s;
-}
-
-nav.inner ul li a:hover {
-    background-color: #b8abab;
-}
-
-
-/* toggleボタン */
-.toggle-btn {
-    display: block;
+#g-nav.open #g-nav-list{
     position: fixed;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    z-index: 3;
-    cursor: pointer;
+    z-index: 999; 
+    width: 30%;
+    height: 100vh;/*表示する高さ*/
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-.toggle-btn span {
+/*ナビゲーション*/
+#g-nav ul {
+    /*ナビゲーション天地中央揃え*/
     position: absolute;
-    display: block;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #333;
-    transition: all 0.5s;
-    border-radius: 4px;
+    z-index: 999;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
-.toggle-btn span:nth-child(1) {
-    top: 4px;
+/*リストのレイアウト設定*/
+
+#g-nav li{
+	list-style: none;
+    text-align: center;
 }
 
-.toggle-btn span:nth-child(2) {
-    top: 14px;
+#g-nav li a{
+	color: #333;
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
 }
 
-.toggle-btn span:nth-child(3) {
-    bottom: 4px;
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	top:10px;
+	right: 10px;
+	cursor: pointer;
+    width: 50px;
+    height:50px;
+}
+	
+/*×に変化*/	
+.openbtn span{
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+	background-color: rgb(102, 102, 102);
+  	width: 45%;
+  }
+
+.openbtn span:nth-of-type(1) {
+	top:15px;	
 }
 
-
-
-
-.open .toggle-btn span {
-    background-color: #FFF;
+.openbtn span:nth-of-type(2) {
+	top:23px;
 }
 
-.open .toggle-btn span:nth-child(1) {
-    transform: translateY(10px)rotate(-315deg);
+.openbtn span:nth-of-type(3) {
+	top:31px;
 }
 
-.open .toggle-btn span:nth-child(2) {
-    opacity: 0;
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
 }
 
-.open .toggle-btn span:nth-child(3) {
-    transform: translateY(-10px)rotate(+315deg);
+.openbtn.active span:nth-of-type(2) {
+	opacity: 0;
 }
 
-
-
-
-
+.openbtn.active span:nth-of-type(3){
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
 
 /* ２人の紹介ページ */
 
