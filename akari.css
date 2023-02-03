@@ -1,0 +1,161 @@
+body {
+    font-weight: 400;
+}
+
+main{
+    display: block;
+}
+
+.kv {
+    height: 100vh;
+    background-image: url(./kv.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+}
+
+.top img {
+    top: 5px;
+    left: 5px;
+    padding-left: 30px;
+    width: 150px;
+    position: absolute;
+}
+
+.top h1 {
+    top: 175px;
+    position: absolute;
+    color: black;
+    font-size: 50px;
+    left: 150px;
+    letter-spacing: 1rem;
+}
+
+
+.kv li {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    -webkit-animation: anime 12s linear 5s infinite;
+    animation: anime 20s linear infinite;
+}
+
+
+nav {
+    display: block;
+    width: 220px;
+    position: fixed;
+    background-color: #FFFFFF;
+    top: 0;
+    right: -300px;
+    bottom: 0;
+    transition: all 0.5s;
+    z-index: 3;
+    opacity: 0;
+}
+
+.open nav {
+    right: 0;
+    opacity: 1;
+}
+
+nav .inner {
+    padding: 25px;
+}
+
+nav .inner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .inner ul li {
+    margin: 0;
+    border-bottom: 1px solid#333;
+    padding: 20px 0px;
+}
+
+nav.inner ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    padding: 1rem;
+    transition-duration: 0.2s;
+}
+
+nav.inner ul li a:hover {
+    background-color: #b8abab;
+}
+
+.wrapper{
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+/* ２人の紹介ページ */
+
+.sectiontitle{
+    display: flex;
+    flex-direction: column;
+}
+h2 .en{
+    font-size: 50px;
+    letter-spacing: 1rem;
+}
+
+h2 .ja{
+    letter-spacing: 0.5rem;
+}
+
+
+h2::after{
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.aboutus{
+    margin-right: 50px;
+    padding: 90px 0;
+    width: 500px;
+}
+
+.aboutus dt{
+    font-weight: bold;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+dl{
+    display: flex;
+}
+
+#about .aboutimg{
+    max-width: 400px;
+    flex-shrink: 0;
+    margin-left: 60px;
+
+}
+
+.aboutimg img{
+    max-width: 100%;
+}
+
+dt{
+    padding-right: 30px;
+}
+
