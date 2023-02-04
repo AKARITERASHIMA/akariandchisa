@@ -36,9 +36,8 @@ main{
 #g-nav-list ul li{
     font-size: 20px;
     letter-spacing: 0.2rem;
+color: white;
 }
-
-
 
 .top img {
     top: 5px;
@@ -47,14 +46,14 @@ main{
     width: 150px;
 }
 
-.top h1 {
+/* .top h1 {
     top: 175px;
     position: absolute;
-    color: black;
+    color: white;
     font-size: 50px;
     left: 150px;
     letter-spacing: 1rem;
-}
+} */
 
 #g-nav{
     position:fixed;
@@ -100,7 +99,7 @@ main{
 }
 
 #g-nav li a{
-	color: #333;
+	color: white;
 	text-decoration: none;
 	padding:10px;
 	display: block;
@@ -224,4 +223,18 @@ dt{
 dd{
     margin-left: 0;
 }
+
+.slick-initialized .slick-slide{
+    display: flex;
+}
+
+/* 一瞬スライダーが見えないようにする記述 */
+/* .slider{
+    visibility: hidden;
+} */
+
+.slider .slick-initialized{
+    visibility: visible;
+}
+
 
