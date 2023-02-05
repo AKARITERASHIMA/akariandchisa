@@ -134,10 +134,15 @@ h2::after{
 #footer img{
     width: 100px;
     line-height: 1px;
-    margin-right: 60px;
+    /* margin-right: 60px; */
     padding-top: 20px;
+    margin-left: 500px;
 }
 
 #footer span{
     font-size: 10px;
+}
+
+#footer .top{
+    margin-left: 300px;
 }
