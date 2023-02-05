@@ -1,4 +1,143 @@
+body {
+    font-weight: 400;
+    background-color: #f0f0f0;
+}
+
+main{
+    display: block;
+}
+
+.wrapper{
+    margin: 100px auto;
+    max-width: 1000px;
+}
 /* おすすめ紹介 */
+.sectiontitle{
+    display: flex;
+    flex-direction: column;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+.sectiontitle .en{
+    font-size: 2.25rem;
+    letter-spacing: 0.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sectiontitle .ja{
+    font-size: 0.875rem;
+    margin-bottom: 36px;
+}
+
+
+h2::after{
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
 .itemtitle {
-    font-size: 300px;
+    font-weight: bold;
+}
+.container2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    
+}
+
+.container2 .left{
+    width: 46%;
+    margin-top: 100px;
+}
+
+.container2 .left .item img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+.container2 .right{
+    width: 46%;
+}
+
+.container2 .right .item img{
+    max-width: 100%;
+    margin-bottom: 50px;
+}
+
+/* Technextの情報 */
+#company{
+    height: 750px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#company .text{
+    width: 55%;
+    background-color: white;
+    padding: 100px 8% 100px 6%;
+    position: absolute;
+}
+
+#company .text .sectiontitle{
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 50px;
+}
+
+#company .text .sectiontitle .en{
+    display: block;
+    font-size: 2.25rem;
+    letter-spacing: 0.3em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#company .text .sectiontitle .ja{
+    display: block;
+    font-size: 0.875rem;
+    margin-bottom: 36px;
+}
+
+#company .info{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#company .info dt{
+    width: 20%;
+    margin-top: 10px;
+}
+
+#company .info dd{
+    width: 80%;
+    margin-top: 10px;
+}
+
+#company .img{
+    width: 53%;
+    position: absolute;
+    top: 115px;
+    right: 0;
+}
+
+#footer{
+    background-color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#footer img{
+    width: 100px;
+    line-height: 1px;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+
+#footer span{
+    font-size: 10px;
 }
