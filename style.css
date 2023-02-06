@@ -389,16 +389,12 @@ h2::after{
     /* margin-right: 60px; */
     padding-top: 20px;
     /* margin-left: 500px; */
-    position: absolute;
-    right: 50px;
-    bottom: 10px;
+    
 }
 
 #footer span{
     font-size: 10px;
-    position: absolute;
-    right: 50px;
-    bottom: 10px;
+   
 }
 
 #footer .top{
