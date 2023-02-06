@@ -2,11 +2,11 @@ body {
     font-weight: 400;
 }
 
-main{
+main {
     display: block;
 }
 
-.wrapper{
+.wrapper {
     margin: 100px auto;
     max-width: 1000px;
 }
@@ -22,29 +22,28 @@ main{
     background-position: center top;
 }
 
-/* シーサーのロゴつけてみた */
 
 /* ナビゲーション */
 
-.top{
+.top {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 
-#g-nav-list ul li{
+#g-nav-list ul li {
     font-size: 20px;
     letter-spacing: 0.2rem;
-color: white;
+    color: white;
 }
-
+/* 
 .top img {
     top: 5px;
     left: 5px;
     padding-left: 30px;
     width: 150px;
-}
+} */
 
 /* .top h1 {
     top: 175px;
@@ -55,92 +54,92 @@ color: white;
     letter-spacing: 1rem;
 } */
 
-#g-nav{
-    position:fixed;
-    z-index: 999;
-	top:0;
+#g-nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
     right: -120%;
-	width:30%;
+    width: 30%;
     height: 100vh;
-	background:#2187b687;
-	transition: all 0.6s;
+    background: #2187b687;
+    transition: all 0.5s;
 }
 
 /* 位置を０に */
 
-#g-nav.open{
+#g-nav.open {
     right: 0;
 }
 
-#g-nav.open #g-nav-list{
+#g-nav.open #g-nav-list {
     position: fixed;
-    z-index: 999; 
+    z-index: 2;
     width: 30%;
-    height: 100vh;/*表示する高さ*/
+    height: 100vh;
+    /*表示する高さ*/
     overflow: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 /*ナビゲーション*/
 #g-nav ul {
-    /*ナビゲーション天地中央揃え*/
     position: absolute;
-    z-index: 999;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /*リストのレイアウト設定*/
 
-#g-nav li{
-	list-style: none;
+#g-nav li {
+    list-style: none;
     text-align: center;
 }
 
-#g-nav li a{
-	color: white;
-	text-decoration: none;
-	padding:10px;
-	display: block;
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: bold;
+#g-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
 }
 
 /*========= ボタンのためのCSS ===============*/
-.openbtn{
-	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-	top:10px;
-	right: 10px;
-	cursor: pointer;
+.openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
     width: 50px;
-    height:50px;
+    height: 50px;
 }
-	
-/*×に変化*/	
-.openbtn span{
+
+/*×に変化*/
+.openbtn span {
     display: inline-block;
     transition: all .4s;
     position: absolute;
     left: 14px;
     height: 3px;
     border-radius: 2px;
-	background-color: rgb(102, 102, 102);
-  	width: 45%;
-  }
+    background-color: rgb(102, 102, 102);
+    width: 45%;
+}
 
 .openbtn span:nth-of-type(1) {
-	top:15px;	
+    top: 15px;
 }
 
 .openbtn span:nth-of-type(2) {
-	top:23px;
+    top: 23px;
 }
 
 .openbtn span:nth-of-type(3) {
-	top:31px;
+    top: 31px;
 }
 
 .openbtn.active span:nth-of-type(1) {
@@ -151,10 +150,10 @@ color: white;
 }
 
 .openbtn.active span:nth-of-type(2) {
-	opacity: 0;
+    opacity: 0;
 }
 
-.openbtn.active span:nth-of-type(3){
+.openbtn.active span:nth-of-type(3) {
     top: 30px;
     left: 18px;
     transform: translateY(-6px) rotate(45deg);
@@ -163,68 +162,69 @@ color: white;
 
 /* ２人の紹介ページ */
 
-.sectiontitle{
+.sectiontitle {
     display: flex;
     flex-direction: column;
 }
-h2 .en{
+
+h2 .en {
     font-size: 50px;
     letter-spacing: 1rem;
 }
 
-h2 .ja{
+h2 .ja {
     letter-spacing: 0.5rem;
 }
 
 
-h2::after{
+h2::after {
     font-size: 10px;
     position: absolute;
     bottom: 10px;
 }
 
-.aboutus{
+.aboutus {
     margin-right: 50px;
     padding: 90px 0;
     width: 500px;
 }
 
-.aboutus dt{
+.aboutus dt {
     font-weight: bold;
     width: 30%;
     padding-bottom: 20px;
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-dl{
+dl {
     display: flex;
 }
 
-#about .aboutimg{
+#about .aboutimg {
     max-width: 400px;
     flex-shrink: 0;
     margin-left: 60px;
 
 }
 
-.aboutimg img{
+.aboutimg img {
     max-width: 100%;
 }
 
-dt{
+dt {
     padding-right: 20px;
 }
 
-dd{
+dd {
     margin-left: 0;
 }
 
-.slick-initialized .slick-slide{
+.slick-initialized .slick-slide {
     display: flex;
 }
 
@@ -233,8 +233,28 @@ dd{
     visibility: hidden;
 } */
 
-.slider .slick-initialized{
+.slider .slick-initialized {
     visibility: visible;
 }
 
 
+/* レスポンシブ */
+
+@media screen and (max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+
+    .aboutus{
+        margin: 0 auto;
+        padding: 45px 0;
+    }
+
+    .h2 en{
+        font-size: 25px;
+    }
+
+    .sectiontitle{
+        text-align: center;
+    }
+}
