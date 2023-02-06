@@ -238,27 +238,6 @@ h2::after {
 }
 
 
-/* レスポンシブ */
-
-@media screen and (max-width:900px){
-    .container{
-        flex-direction: column;
-    }
-
-    .aboutus{
-        margin: 0 auto;
-        padding: 45px 0;
-    }
-
-    .h2 en{
-        font-size: 25px;
-    }
-
-    .sectiontitle{
-        text-align: center;
-    }
-}
-
 body {
     font-weight: 400;
     background-color: #f0f0f0;
@@ -417,4 +396,25 @@ h2::after{
 
 #footer .top{
     margin-left: 300px;
+}
+
+/* レスポンシブ */
+
+@media screen and (max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+
+    .aboutus{
+        margin: 0 auto;
+        padding: 45px 0;
+    }
+
+    .h2 en{
+        font-size: 25px;
+    }
+
+    .sectiontitle{
+        text-align: center;
+    }
 }
