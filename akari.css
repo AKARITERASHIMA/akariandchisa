@@ -201,7 +201,7 @@ h2::after {
     justify-content: space-between;
 }
 
-dl {
+.aboutus dl {
     display: flex;
 }
 
@@ -216,11 +216,11 @@ dl {
     max-width: 100%;
 }
 
-dt {
+.aboutus dt {
     padding-right: 20px;
 }
 
-dd {
+.aboutus dd {
     margin-left: 0;
 }
 

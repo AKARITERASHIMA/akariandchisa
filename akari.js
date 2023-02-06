@@ -16,10 +16,11 @@ $(function(){
     //     	setting-name: setting-value
     //     });
 
+    // スライダープラグイン『Slick』使用
     $(".slider").slick({
         arrows: false,
         dots: true,
-        autoplay: true
+        autoplay: true //自動再生する
     });
 
 
