@@ -1,0 +1,260 @@
+body {
+    font-weight: 400;
+}
+
+main {
+    display: block;
+}
+
+.wrapper {
+    margin: 100px auto;
+    max-width: 1000px;
+}
+
+/* キービジュアル */
+
+.kv {
+    height: 100vh;
+    background-image: url(./kv.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    background-position: center top;
+}
+
+
+/* ナビゲーション */
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#g-nav-list ul li {
+    font-size: 20px;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+/* 
+.top img {
+    top: 5px;
+    left: 5px;
+    padding-left: 30px;
+    width: 150px;
+} */
+
+/* .top h1 {
+    top: 175px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    left: 150px;
+    letter-spacing: 1rem;
+} */
+
+#g-nav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -120%;
+    width: 30%;
+    height: 100vh;
+    background: #2187b687;
+    transition: all 0.5s;
+}
+
+/* 位置を０に */
+
+#g-nav.open {
+    right: 0;
+}
+
+#g-nav.open #g-nav-list {
+    position: fixed;
+    z-index: 2;
+    width: 30%;
+    height: 100vh;
+    /*表示する高さ*/
+    overflow: auto;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li {
+    list-style: none;
+    text-align: center;
+}
+
+#g-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn {
+    position: fixed;
+    z-index: 9999;
+    /*ボタンを最前面に*/
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/*×に変化*/
+.openbtn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    left: 14px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: rgb(102, 102, 102);
+    width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+    top: 15px;
+}
+
+.openbtn span:nth-of-type(2) {
+    top: 23px;
+}
+
+.openbtn span:nth-of-type(3) {
+    top: 31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+    top: 18px;
+    left: 18px;
+    transform: translateY(6px) rotate(-45deg);
+    width: 30%;
+}
+
+.openbtn.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3) {
+    top: 30px;
+    left: 18px;
+    transform: translateY(-6px) rotate(45deg);
+    width: 30%;
+}
+
+/* ２人の紹介ページ */
+
+.sectiontitle {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 .en {
+    font-size: 50px;
+    letter-spacing: 1rem;
+}
+
+h2 .ja {
+    letter-spacing: 0.5rem;
+}
+
+
+h2::after {
+    font-size: 10px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.aboutus {
+    margin-right: 50px;
+    padding: 90px 0;
+    width: 500px;
+}
+
+.aboutus dt {
+    font-weight: bold;
+    width: 30%;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutus dl {
+    display: flex;
+}
+
+#about .aboutimg {
+    max-width: 400px;
+    flex-shrink: 0;
+    margin-left: 60px;
+
+}
+
+.aboutimg img {
+    max-width: 100%;
+}
+
+.aboutus dt {
+    padding-right: 20px;
+}
+
+.aboutus dd {
+    margin-left: 0;
+}
+
+.slick-initialized .slick-slide {
+    display: flex;
+}
+
+/* 一瞬スライダーが見えないようにする記述 */
+/* .slider{
+    visibility: hidden;
+} */
+
+.slider .slick-initialized {
+    visibility: visible;
+}
+
+
+/* レスポンシブ */
+
+@media screen and (max-width:900px){
+    .container{
+        flex-direction: column;
+    }
+
+    .aboutus{
+        margin: 0 auto;
+        padding: 45px 0;
+    }
+
+    .h2 en{
+        font-size: 25px;
+    }
+
+    .sectiontitle{
+        text-align: center;
+    }
+}

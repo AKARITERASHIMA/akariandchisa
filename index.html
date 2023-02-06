@@ -1,19 +1,131 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akari&Chisa</title>
-   <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="kv">
-        <img src="./kv.png" alt="">
-    </div>
-    
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./akari.css">
 
-    <script src="./script.js"></script>
+</head>
+
+<body>
+    <!-- kv -->
+    <div class="kv">
+
+        <div class="top">
+            <!-- <img src="./illust302 (1).png" alt="ロゴ"> -->
+            <nav id="g-nav">
+                <div id="g-nav-list">
+                    <ul>
+                        <li><a href="#">TOP</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#">RECOMMEND</a></li>
+                        <li><a href="#">COMPANY</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <!-- <h1>love okinawa (仮）</h1> -->
+    </div>
+
+    <div class="openbtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <main>
+
+        <!-- 二人の紹介ページ -->
+        <section id="about" class="wrapper">
+
+            <h2 class="sectiontitle">
+                <span class="en">ABOUT US</span>
+                <span class="ja">わたしたちについて</span>
+            </h2>
+            <div class="slider">
+
+                <div class="container">
+
+                    <div class="aboutus">
+                        <dl>
+                            <dt>NAME</dt>
+                            <dd>Akari Terashima</dd>
+                        </dl>
+
+                        <dl>
+
+                            <dt>HOMETOWN</dt>
+                            <dd>Niigata</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>COMMENT</dt>
+                            <dd>あっという間に２ヶ月たちましたね..<br>
+                                残り２ヶ月楽しみながら頑張っていきます！</dd>
+
+                        </dl>
+                    </div>
+                    <div class="aboutimg">
+                        <img src="./IMG_6588.JPG" alt="">
+                    </div>
+
+                </div>
+                <!-- 米須 -->
+                <div class="container">
+
+                    <div class="aboutus">
+                        <dl>
+                            <dt>NAME</dt>
+                            <dd>Chisa Komesu</dd>
+                        </dl>
+
+                        <dl>
+
+                            <dt>HOMETOWN</dt>
+                            <dd>Okinawa</dd>
+                        </dl>
+
+                        <dl>
+                            <dt>COMMENT</dt>
+                            <dd>もうそろそろ大学卒業...<br>
+                                寂しいです〜( ；∀；)大学楽しかった..</dd>
+
+                        </dl>
+                    </div>
+
+                    <div class="aboutimg">
+                        <img src="./fv_sisa.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+
+
+
+
+
+    </main>
+    <!-- jqueryの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- slick　sliderの為のCDN読み込み -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./akari.js"></script>
+
+
 </body>
+
 </html>
