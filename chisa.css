@@ -67,6 +67,17 @@ h2::after{
     margin-bottom: 50px;
 }
 
+/* おすすめ紹介のjquery準備 */
+.fadein{
+    opacity: 0;
+    transform: translate(0,100px);
+    transition: all 1s;
+}
+.fadein.active{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
 /* Technextの情報 */
 #company{
     height: 750px;
